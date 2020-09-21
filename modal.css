@@ -1,0 +1,35 @@
+.modal-content{
+    display:none; 
+    position: relative;
+    background: #f4f4f4;
+    width:300px;
+    height: 169px; 
+    margin:auto;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0, 0.2),
+                0 7px 20px 0 rgba(0,0,0, 0.17);
+
+    animation: modalopen 1s ;
+}
+
+.closeBtn{
+
+    position:absolute;
+    padding-left:95%;
+    display:none; 
+    color: #fff;
+    background: rgba(0,0,0, 0.3);
+    z-index: 1;
+    font-size:30px;
+
+} 
+ .closeBtn:hover ,.closeBtn:focus{
+    
+    color: rgba(255, 255, 255, 0.781);
+    text-decoration:none;
+    cursor: pointer;
+} 
+
+@keyframes modalopen{
+    from{opacity:0}
+    to{opacity: 1} 
+}
